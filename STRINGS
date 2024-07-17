@@ -1,0 +1,52 @@
+//HTNL PART
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A brief description of this website">
+    <meta http-equiv="refresh" content="30">
+    <title>WEB DEVELOPMENT</title>
+    <link rel="stylesheet" href="codee.CSS">
+    <script src="codee.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Hello, World!</h1>
+    <p>This is a simple DOM example.</p>
+    <button onclick="changeTitle()">Click me</button>
+
+</body>
+
+</html>
+//JS PART
+// STRINGS IN JAVASCRIPT
+var string = 'THIS IS JAVASCRIPT';
+var name = 'AYAN';
+var message = 'HAVE A NICE DAY';
+
+// String concatenation (adding multiple strings)
+console.log(string + ' ' + name + ' ' + message); // Added spaces for readability
+
+// Get the length of the string
+var stringLength = string.length; // `length` is a property, not a function
+console.log(stringLength + ' is the length of the string');
+
+// USING DOM IN JS TO EDIT TEXT IN HTML
+function changeTitle() {
+    document.getElementById('title').innerText = 'Title Changed!';
+}
+// position
+var position = string.indexOf('JAVA');
+console.log(position);
+var position = string.lastIndexOf('JAVA');
+console.log(position);
+// SLICING OF STRING
+var substr = string.slice(1, 7);
+console.log(substr);
+// replacing strings
+var replaced = string.replace('THIS', 'JAVASCRIPT');
+console.log(string);
+console.log(replaced);
