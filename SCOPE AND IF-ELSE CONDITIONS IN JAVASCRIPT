@@ -1,0 +1,54 @@
+// SCOPE AND IF-ELSE CONDITIONS IN JAVASCRIPT
+// const variable(doesnt change the value)
+const a = 5;
+// let (variable)
+let x = 5;
+
+// u can change value of a variable in block section
+console.log(x);
+{
+    x = 10;
+    console.log(x);
+}
+// if-else statements and switch-case
+const age = 18;
+if (age > 18) {
+    console.log("u are above 18");
+} else if (age == 18) {
+    console.log("u are 18");
+
+
+} else {
+    console.log("u are under 18");
+}
+
+const day = 3;
+let dayName;
+
+switch (day) {
+    case 1:
+        dayName = 'Monday';
+        break;
+    case 2:
+        dayName = 'Tuesday';
+        break;
+    case 3:
+        dayName = 'Wednesday';
+        break;
+    case 4:
+        dayName = 'Thursday';
+        break;
+    case 5:
+        dayName = 'Friday';
+        break;
+    case 6:
+        dayName = 'Saturday';
+        break;
+    case 7:
+        dayName = 'Sunday';
+        break;
+    default:
+        dayName = 'Invalid day';
+}
+
+console.log('The day is: ' + dayName);
