@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="A brief description of this website">
+    <meta http-equiv="refresh" content="30">
+    <title>WEB DEVELOPMENT</title>
+    <link rel="stylesheet" href="codee.CSS">
+    <script src="codee.js"></script>
+</head>
+
+<body>
+    <h1>SETTING DATE AND TIME IN WEB PAGE</h1>
+    <div class="container">
+        CURRENT TIME IS <span id="TIME"></span>
+    </div>
+
+</body>
+
+</html>
+//SCRIPT
+// SETTING DATE AND TIME IN JAVASCRIPT
+setInterval(CurrentTime, 1500);
+function CurrentTime() {
+    TIME.innerHTML = new Date();
+}
+//STYLING USING CSS
+.container {
+    font-size: 15px;
+    font-weight: 600;
+    border: 4px solid red;
+    background-color: tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4px;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+}
