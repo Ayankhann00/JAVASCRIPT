@@ -1,0 +1,22 @@
+// Example array of students
+var students = [
+    { name: "Ayan", age: 20, grade: "A" },
+    { name: "Sara", age: 22, grade: "B" },
+    { name: "John", age: 21, grade: "A" },
+    { name: "Linda", age: 23, grade: "C" }
+];
+
+// Using forEach to log student details
+students.forEach(function(student) {
+    console.log("Name:", student.name);
+    console.log("Age:", student.age);
+    console.log("Grade:", student.grade);
+    console.log("-------------");
+});
+
+// Using forEach to modify an array
+var ages = [20, 22, 21, 23];
+ages.forEach(function(age, index, array) {
+    array[index] = age + 1; // Increment each age by 1
+});
+console.log("Modified ages:", ages); // [21, 23, 22, 24]
