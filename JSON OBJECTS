@@ -1,0 +1,36 @@
+// Example JSON object as a JavaScript object
+let person = {
+    name: "Ayan Khan",
+    age: 20,
+    email: "ayan.khan@example.com",
+    address: {
+        street: "123 Main St",
+        city: "Islamabad",
+        country: "Pakistan"
+    },
+    phoneNumbers: [
+        { type: "home", number: "123-456-7890" },
+        { type: "work", number: "098-765-4321" }
+    ],
+    isStudent: true,
+    skills: ["JavaScript", "HTML", "CSS", "React.js"]
+};
+
+// Accessing properties of the JSON object
+console.log("Name:", person.name); // Ayan Khan
+console.log("Age:", person.age); // 20
+console.log("Email:", person.email); // ayan.khan@example.com
+console.log("Street:", person.address.street); // 123 Main St
+console.log("City:", person.address.city); // Islamabad
+console.log("Home Phone:", person.phoneNumbers[0].number); // 123-456-7890
+console.log("First Skill:", person.skills[0]); // JavaScript
+
+// Converting JavaScript object to JSON string
+let jsonString = JSON.stringify(person);
+console.log("JSON String:", jsonString);
+
+// Converting JSON string back to JavaScript object
+let parsedPerson = JSON.parse(jsonString);
+console.log("Parsed Name:", parsedPerson.name); // Ayan Khan
+console.log("Parsed Skills:", parsedPerson.skills); // ["JavaScript", "HTML", "CSS", "React.js"]
+
